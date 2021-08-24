@@ -37,7 +37,7 @@ This is a [ASP .Net Core App](https://github.com/dotnet/aspnetcore). The solutio
 - Basic API to insert records into a MySql database using a table that has an auto increment primary key.
 - Using the [artillery npm](https://www.npmjs.com/package/artillery) package to stress test the API's.
 
-![Swagger](https://github.com/craigfras/efcore-deadlock-auto-increment-id/blob/main/.images/swaggeroverview.PNG)
+![Swagger](https://github.com/Runninghill/ef-core-performance/blob/main/.images/swaggeroverview.PNG)
 
 ## Prerequisites
 
