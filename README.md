@@ -1,6 +1,6 @@
 # Entity Framework Core Performance Test
 
-![Runninghill Logo](https://github.com/Runninghill/rh-angular-rsa-form-validators/blob/67badb0d7a78dca5c7ccacb729bbb3e5b0c5f8db/docs/runninghill.png?raw=true "Runninghill")
+![Runninghill Logo](https://github.com/Runninghill/ef-core-performance/blob/main/.images/runninghill.png?raw=true "Runninghill")
 
 A solution used to run performance tests against Entity Framework Core (using different strategies and databases) to determine the load that could be catered for when **inserting records into a database** using API endpoints.
 
