@@ -348,3 +348,5 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+/.idea/.idea.EfCorePerformance/.idea/encodings.xml
+/.idea/.idea.EfCorePerformance/.idea/workspace.xml
