@@ -1,0 +1,15 @@
+config:
+  target: 'http://localhost:55204'
+  tls:
+    rejectUnauthorized: false
+  phases:
+    - duration: 5
+      arrivalRate: 100
+scenarios:
+  - flow:
+      - post:
+          url: "/MsSql/SP"
+          json:
+            firstName: "firstname"
+            surname: "lastname"
+            idNumber: "idnumber"

@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EfCorePerformance", "EfCorePerformance\EfCorePerformance.csproj", "{CFA8C7D5-C93D-4F4C-BF6E-E60FB0969015}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "deployment", "deployment", "{01E6FAD7-1B79-4D17-B451-70A93FE23EC0}"
+ProjectSection(SolutionItems) = preProject
+	deployment\docker-compose.yml = deployment\docker-compose.yml
+EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "testing", "testing", "{7F9772C1-9FDB-418B-BBB5-03AFD67A4961}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "mssql-scripts", "mssql-scripts", "{5158566A-BE2D-4362-A49F-0F57A439CEA3}"
+ProjectSection(SolutionItems) = preProject
+	deployment\mssql-scripts\1_Create_Db.sql = deployment\mssql-scripts\1_Create_Db.sql
+	deployment\mssql-scripts\2_Create_Table_AutoGenId.sql = deployment\mssql-scripts\2_Create_Table_AutoGenId.sql
+	deployment\mssql-scripts\3_Create_Table_Guid.sql = deployment\mssql-scripts\3_Create_Table_Guid.sql
+	deployment\mssql-scripts\4_Create_SP_InsertTestModel.sql = deployment\mssql-scripts\4_Create_SP_InsertTestModel.sql
+	deployment\mssql-scripts\5_Set_Isolation_Level.sql = deployment\mssql-scripts\5_Set_Isolation_Level.sql
+EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{ADCDEC9F-0C1E-4675-AC08-0EB280409FBB}"
+ProjectSection(SolutionItems) = preProject
+	README.md = README.md
+	.gitignore = .gitignore
+EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "artillery", "artillery", "{A3AF2762-C39C-47E9-B581-0AEA71304A16}"
+ProjectSection(SolutionItems) = preProject
+	testing\artillery\MsSqlAutoGenId.yml = testing\artillery\MsSqlAutoGenId.yml
+	testing\artillery\MsSqlGuid.yml = testing\artillery\MsSqlGuid.yml
+	testing\artillery\MsSqlStoredProcedure.yml = testing\artillery\MsSqlStoredProcedure.yml
+	testing\artillery\MySqlAutoGenId.yml = testing\artillery\MySqlAutoGenId.yml
+EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "mysql-scripts", "mysql-scripts", "{0B732312-9B1A-4056-8722-906299B76712}"
+ProjectSection(SolutionItems) = preProject
+	deployment\mysql-scripts\1_Create_Db.sql = deployment\mysql-scripts\1_Create_Db.sql
+	deployment\mysql-scripts\2_Create_Table_AutoGenId.sql = deployment\mysql-scripts\2_Create_Table_AutoGenId.sql
+EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CFA8C7D5-C93D-4F4C-BF6E-E60FB0969015}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFA8C7D5-C93D-4F4C-BF6E-E60FB0969015}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFA8C7D5-C93D-4F4C-BF6E-E60FB0969015}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFA8C7D5-C93D-4F4C-BF6E-E60FB0969015}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5158566A-BE2D-4362-A49F-0F57A439CEA3} = {01E6FAD7-1B79-4D17-B451-70A93FE23EC0}
+		{A3AF2762-C39C-47E9-B581-0AEA71304A16} = {7F9772C1-9FDB-418B-BBB5-03AFD67A4961}
+		{0B732312-9B1A-4056-8722-906299B76712} = {01E6FAD7-1B79-4D17-B451-70A93FE23EC0}
+	EndGlobalSection
+EndGlobal
