@@ -20,7 +20,7 @@ This is as a result of experiencing **terrible performance** and **ZombieCheck()
     - [Stored Procedure](#stored-procedure)
     - [EF Core with MySql](#ef-core-with-mysql)
     - [Conclusion](#conclusion)
-  - [Visual Studio Quickstart](#visual-studio-quickstart)
+  - [Visual Studio Quick Start](#visual-studio-quick-start)
     - [Running Locally in Visual Studio - With Docker](#running-locally-in-visual-studio---with-docker)
     - [Running Locally in Visual Studio - Without Docker](#running-locally-in-visual-studio---without-docker)
     - [Application Settings](#application-settings)
@@ -127,7 +127,7 @@ The deadlock is caused by the SELECT statement in Entity Framework to get the ge
 
 This can be avoided in 4 ways:
 
-1. Creating the Auto Increment Column as a Primary Key solves the issue as this means the value is read from the PK's Index and a lock isn't created. **Note** Databases like MySql only allow you to create an Auto Increment Field as a Primary Key.
+1. Creating the Auto Increment Column as a Primary Key solves the issue as this means the value is read from the Primary Key's Index and a lock isn't created. **Note** Databases like MySql only allow you to create an Auto Increment Field as a Primary Key.
   
     ```sql
     use test
@@ -201,7 +201,7 @@ Simple API that inserts records into a MySql database using EF Core (Pomelo.Enti
 
 If a table with an **Auto Incremented Id** column is used the load that the default implementation of EF Core and MS SQL can handle is **extremely disappointing**.It isn't close to the load that can be handled by a Stored Procedure unless the **default transaction isolation levels are changed**.
 
-## Visual Studio Quickstart
+## Visual Studio Quick Start
 
 The following tutorial shows how to run locally.
 
