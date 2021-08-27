@@ -8,7 +8,7 @@ namespace EFTestApp.Data
         public MsSqlDbContext(DbContextOptions<MsSqlDbContext> options) :
             base(options)
         {
-            Database.AutoTransactionsEnabled = false;
+            // Database.AutoTransactionsEnabled = false;
         }
         
         public DbSet<AutoGenId> AutoGenId { set; get; }

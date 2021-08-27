@@ -28,12 +28,12 @@ namespace EFTestApp
             services.AddDbContext<MsSqlDbContext>(builder => builder
                 .UseSqlServer(Configuration.GetConnectionString("MsSql"), sqlOptions =>
                 {
-                    sqlOptions.ExecutionStrategy(c =>
-                        new CustomExecutionStrategy(c, 2, TimeSpan.FromSeconds(30)));
-                    // sqlOptions.EnableRetryOnFailure(
-                    //     maxRetryCount: 2,
-                    //     maxRetryDelay: TimeSpan.FromSeconds(30),
-                    //     errorNumbersToAdd: null);
+                    // sqlOptions.ExecutionStrategy(c =>
+                    //     new CustomExecutionStrategy(c, 2, TimeSpan.FromSeconds(30)));
+                    sqlOptions.EnableRetryOnFailure(
+                        maxRetryCount: 2,
+                        maxRetryDelay: TimeSpan.FromSeconds(30),
+                        errorNumbersToAdd: null);
                 }));
             
             services.AddDbContext<MySqlDbContext>(builder => builder
